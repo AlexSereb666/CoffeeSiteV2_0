@@ -78,7 +78,7 @@ body {
   @media screen and (max-width: 365px) {  
     .footer-container {
         margin-left: 15px;
-        font-size: 10px;
+        font-size: 8px;
     }
     .the-end-footer {
         height: 70px;
