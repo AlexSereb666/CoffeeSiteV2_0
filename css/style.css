@@ -75,4 +75,13 @@ body {
         height: 80px;
       }
   }
+  @media screen and (max-width: 365px) {  
+    .footer-container {
+        margin-left: 15px;
+        font-size: 10px;
+    }
+    .the-end-footer {
+        height: 70px;
+      }
+  }
   /*Футер сайта*/
