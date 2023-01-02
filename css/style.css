@@ -253,5 +253,9 @@ body {
     .the-end-footer {
         height: 70px;
     }
+    .footer-mess {
+        width: 17px;
+        height: 17px;
+    }
   }
   /*Футер сайта*/
