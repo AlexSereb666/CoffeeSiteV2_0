@@ -1,0 +1,78 @@
+
+/*общие настройки*/
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+  }
+  /*общие настройки*/
+
+/*Футер сайта*/
+.the-end-footer {
+    background-color:rgba(15, 15, 14, 0.733);
+    width: 100%;
+    height: 100px;
+    border-style: none;
+    text-align: center;
+  }
+  .the-end-footer-black {
+    background-color:rgba(0, 0, 0, 0.966);
+    width: 100%;
+    height: 20px;
+  }
+  .footer-container {
+    color:rgb(255, 255, 255);
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 0%;
+    text-align: left;
+  }
+  .margin50px {
+    margin-left: 200px;
+    font-size: 14px;
+  }
+  .footer-mess {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  @media screen and (max-width: 980px) {
+    .footer-container {
+        margin-left: 40px;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .footer-container {
+        margin-left: 30px;
+        font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 480px) {  
+    .footer-container {
+        margin-left: 10px;
+    }
+    .margin50px {
+        margin-left: 30px;
+    }
+    .footer-mess {
+        width: 25px;
+        height: 25px;
+    }
+  }
+  @media screen and (max-width: 425px) {  
+    .footer-container {
+        margin-left: 20px;
+        font-size: 10px;
+    }
+    .the-end-footer {
+        height: 80px;
+      }
+  }
+  /*Футер сайта*/
