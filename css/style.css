@@ -592,6 +592,10 @@ body {
         margin-left: 205px;
         font-size: 8px;
     }
+    .tabcontainer {
+        width:360px;
+        height: 185px;
+    }
 }
 /*Слайдер - новинки меню*/
 
