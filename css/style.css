@@ -367,6 +367,9 @@ body {
     }
     .video-left {
         margin-left: 3%;
+        margin-top: -2%;
+    }
+    .video-right {
         margin-top: -10%;
     }
 }
@@ -374,9 +377,6 @@ body {
 {
     .video-left {
         margin-top: -1%;
-    }
-    .video-right {
-        margin-top: -10%;
     }
 }
 /*О нас и видео превью*/
