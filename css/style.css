@@ -465,6 +465,11 @@ body {
         font-weight:700
     }
 }
+@media screen and (max-width: 695px) {
+    .preview__life {
+        margin-left: 400px;
+    }
+}
 @media screen and (max-width: 650px) {
     .tabcontainer {
         width:481px;
@@ -505,6 +510,16 @@ body {
     }
     .preview {
         margin-bottom: -10%;
+    }
+}
+@media screen and (max-width: 560px) {  
+    .preview__life {
+        margin-left: 290px;
+    }
+}
+@media screen and (max-width: 500px) {  
+    .preview__life {
+        margin-left: 260px;
     }
 }
 @media screen and (max-width: 480px) {  
@@ -551,7 +566,7 @@ body {
 }
 @media screen and (max-width: 425px) {
     .preview__life {
-        margin-left: 230px;
+        margin-left: 215px;
         margin-top: 10px;
         font-size: 9px;
         width: 170px;
@@ -570,6 +585,12 @@ body {
         position: absolute;
         padding: 0%;
         text-align: center;
+    }
+}
+@media screen and (max-width: 395px) {
+    .preview__life {
+        margin-left: 205px;
+        font-size: 8px;
     }
 }
 /*Слайдер - новинки меню*/
