@@ -1,9 +1,19 @@
 
 /*общие настройки*/
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
 *, *::before, *::after {
     box-sizing: border-box;
 }
-
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -20,6 +30,168 @@ body {
     margin-bottom: 0.5rem;
   }
   /*общие настройки*/
+
+/*О нас и видео превью*/
+.video-play {
+    width: 590px;
+    height: 332px;
+    box-shadow: 0px 0px 15px 10px #000;
+}
+.info-coffe {
+    margin-top: 30px;
+}
+.pb-100 {
+    padding-bottom: 100px;
+}
+.pt-40 {
+    padding-top: 40px;
+}
+.row.no-margin {
+    margin-left: 0;
+    margin-right: 0;
+}
+.justify-content-start {
+    justify-content: flex-start !important;
+}
+.video-right {
+    background-size: cover;
+    height: 350px;
+    border-radius: 10px;
+} 
+.video-right .overlay-bg {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.78);
+}
+.video-right .play-btn {
+    z-index: 2;
+}
+.justify-content-center {
+    justify-content: center !important;
+}
+.video-left {
+    padding-left: 10%;
+    width: 500px;
+}
+.video-left h6 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #b68834;
+    font-size: 14px;
+    font-weight: 300;
+}
+.video-left h1 {
+    padding-bottom: 20px;
+    font-size: 26px;
+}
+.video-left p span {
+    color: #000;
+    font-weight: 400;
+}
+.fix-top {
+    margin-top: 50px;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 1200px) {
+    .video-left h1 {
+        padding-bottom: 20px;
+        font-size: 22px;
+    }
+    .video-left {
+        padding-left: 10%;
+    }
+    .video-left span {
+        font-size: 14px;
+    }
+    .video-left p {
+        font-size: 14px;
+    }
+    .video-left h6 {
+        font-size: 12px;
+    }
+    .video-play {
+        width: 500px;
+        height: 281px;
+    }
+    .video-right {
+        width: 400px;
+    }  
+}
+@media screen and (max-width: 990px) {
+    .video-left {
+        width: 300px;
+        padding-left: 30px;
+    }
+    .video-right {
+        height: 200px;
+        width: 350px;
+    }
+    .content-previe {
+        width: 100%;
+    }
+    .video-play {
+        width: 350px;
+        height: 197px;
+    }
+    .video-left span {
+        font-size: 12px;
+    }
+    .video-left p {
+        font-size: 12px;
+    }
+    .video-left h6 {
+        font-size: 9px;
+    }
+    .video-left h1 {
+        font-size: 14px;
+    }
+    .fix-top {
+        padding-bottom: 5%;
+    }
+}
+@media screen and (max-width: 770px) {
+    .video-right {
+        width: 100%;
+        margin-left: 25%;
+    }
+    .video-left {
+        margin-left: 20%;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 650px) {
+    .video-right {
+        width: 100%;
+        margin-left: 15%;
+    }
+    .video-left {
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 480px) {  
+    .video-right {
+        width: 100%;
+        margin-left: 10%;
+    }
+    .video-left {
+        margin-left: 3%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .video-play {
+        width: 245px;
+        height: 138px;
+    }
+    .video-left {
+        margin-left: 3%;
+        margin-top: -10%;
+    }
+}
+/*О нас и видео превью*/
 
 /*боковое меню соц.сетей*/
 .sidepanel {

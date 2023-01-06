@@ -1,5 +1,27 @@
 // все работает только после того, как страница будет загружена //
 document.addEventListener('DOMContentLoaded', () => { 
+
+    // при прокрутки вниз будет появляться полоса в меню навигации //
+    // при прокрутки вверх до упора эта полоса будет исчезать //
+    let navMenu = document.getElementById("header");
+    let video = document.querySelector(".video-play");
+    video.play();
+
+    window.addEventListener("scroll", (e) => {
+        // меню навигации //
+        if (window.scrollY >= 100) {
+            navMenu.style.backgroundColor = "rgba(48, 40, 39, 0.6)";
+        }
+        else {
+            navMenu.style.backgroundColor = "rgba(48, 40, 39, 0)";
+        }
+    });
+
+    // когда видео заканчивается, оно перематывается вначало //
+    video.addEventListener("ended", (e) => {
+        video.currentTime = 0;
+        video.play();
+    });
     // новинки в меню //
     // переключатель слайдера //
     let tabs = document.querySelectorAll('.tabheader__item'),
