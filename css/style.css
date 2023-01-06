@@ -136,11 +136,16 @@ body {
 /*анимация*/
 .single-menu{
     transition: 0.5s; /* Время эффекта */
-    text-align: center; 
+    text-align: center;
+    
     /*cursor: url('../img/Coffee_to_go.png'),auto;*/
 }
 .single-menu:hover {
     transform: scale(0.8); /* уменьшение масштаба */ 
+    background-color: #8cf191c5;
+    -webkit-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
 }
 .title-div h4 {
     font-size: 26px;
@@ -368,7 +373,6 @@ body {
     }
 }
 /*Меню напитков*/
-
 
 /*Футер сайта*/
 .the-end-footer {
