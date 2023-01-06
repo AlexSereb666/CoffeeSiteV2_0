@@ -523,6 +523,7 @@ body {
     }
 }
 @media screen and (max-width: 480px) {  
+
     .tabcontainer {
         width:366px;
         height: 185px;
@@ -566,7 +567,7 @@ body {
 }
 @media screen and (max-width: 425px) {
     .preview__life {
-        margin-left: 215px;
+        margin-left: 222px;
         margin-top: 10px;
         font-size: 9px;
         width: 170px;
@@ -587,13 +588,33 @@ body {
         text-align: center;
     }
 }
+@media screen and (max-width: 410px) {
+    .preview__life {
+        margin-left: 215px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .preview__life {
+        margin-left: 210px;
+    }
+}
 @media screen and (max-width: 395px) {
     .preview__life {
         margin-left: 205px;
         font-size: 8px;
     }
     .tabcontainer {
-        width:360px;
+        width:359px;
+        height: 185px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .preview__life {
+        margin-left: 195px;
+        font-size: 8px;
+    }
+    .tabcontainer {
+        width:355px;
         height: 185px;
     }
 }
