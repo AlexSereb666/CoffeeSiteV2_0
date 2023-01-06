@@ -786,12 +786,12 @@ body {
 }
 @media screen and (max-width: 400px) {
     .preview__life {
-        margin-left: 210px;
+        margin-left: 212px;
     }
 }
 @media screen and (max-width: 395px) {
     .preview__life {
-        margin-left: 205px;
+        margin-left: 210px;
         font-size: 8px;
     }
     .tabcontainer {
