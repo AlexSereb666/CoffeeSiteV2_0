@@ -1423,19 +1423,34 @@ body {
         margin-top: -10%;
     }
 }
-@media screen and (max-width: 365px) {  
+@media screen and (max-width: 385px) { 
     .one-text-menu {
-        font-size: 19px;
+        font-size: 18px;
     }
     .text-menu {
         margin-top: -10px;
-        font-size: 16px;
+        font-size: 15px;
     }
     .love_or_coffee {
         width: 74px;
         height: 47px;
-        margin-left: 82%;
-        margin-top: -14%;
+        margin-left: 78%;
+        margin-top: -13%;
+    }
+}
+@media screen and (max-width: 365px) {  
+    .one-text-menu {
+        font-size: 17px;
+    }
+    .text-menu {
+        margin-top: -10px;
+        font-size: 15px;
+    }
+    .love_or_coffee {
+        width: 74px;
+        height: 47px;
+        margin-left: 79%;
+        margin-top: -12%;
     }
     .title-div h4 {
         font-size: 15px;
