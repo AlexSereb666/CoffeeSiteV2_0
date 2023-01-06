@@ -943,6 +943,14 @@ body {
         padding-top: 10%;
     }
 }
+@media screen and (max-width: 392px) {  
+    .love_or_coffee {
+        width: 74px;
+        height: 47px;
+        margin-left: 80%;
+        margin-top: -10%;
+    }
+}
 @media screen and (max-width: 365px) {  
     .one-text-menu {
         font-size: 19px;
