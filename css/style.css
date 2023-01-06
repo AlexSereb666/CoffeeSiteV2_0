@@ -31,7 +31,280 @@ body {
   }
   /*общие настройки*/
 
-/*Банер*/
+/*гамбургер*/
+
+.hamburger-menu {
+    display: none;
+}
+#logoGam {
+    display: none;
+}
+@media screen and (max-width: 980px) {
+    .hamburger-menu {
+        display: block;
+    }
+    #nav-menu-container {
+        display: none;
+    } 
+    .Schedule {
+        display: none;
+    } 
+    #logo {
+        display: none;
+    }
+    #header {
+        height: 65px;
+    }
+    #logoGam {
+        display: block;
+    }
+}
+@media screen and (max-width: 816px) {
+    #logoGam {
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width: 565px) {
+    #logoGam {
+        margin-left: 60px;
+    }
+}
+#menu__toggle {
+    opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+}
+.menu__btn {
+    position: fixed;
+    top: 40px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transition-duration: .25s;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+.menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #8a634093;
+    box-shadow: 2px 2px 6px rgb(255, 255, 255);
+    transition-duration: .25s;
+}
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+.menu__item:hover {
+    background-color: #97421aad;
+}
+/*Гамбургер*/
+
+/*Навигационное меню*/
+#header {
+    padding: 1px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+}
+#header.header-scrolled {
+    background: rgba(20, 2, 0, 0.8);
+    transition: all 0.5s;
+}
+#header #logo h1 {
+    font-size: 34px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+#logo {
+    margin-top: -20px;
+    margin-left: -120px;
+}
+#header #logo h1 a, #header #logo h1 a:hover {
+    color: #fff;
+    padding-left: 10px;
+    border-left: 4px solid #b68834;
+} 
+#header #logo img {
+    padding: 0;
+    margin: 0;
+}
+.header-top ul {
+    text-align: right;
+    margin-right: 5px;
+}  
+.header-top ul li {
+    color: #fff;
+    display: inline-block;
+    margin-right: 20px;
+}
+.header-top ul li a {
+    color: #fff;
+}
+#header #logo h1 a, #header #logo h1 a:hover {
+    color: #fff;
+    padding-left: 10px;
+    border-left: 4px solid #b68834;
+}
+.header-top ul {
+    text-align: right;
+    margin-right: 5px;
+}       
+.header-top ul li {
+    color: #fff;
+    display: inline-block;
+    margin-right: 20px;
+}      
+.header-top ul li a {
+    color: #fff;
+}
+.justify-content-end {
+    justify-content: flex-end !important;
+}
+.align-items-center {
+    align-items: center !important;
+}
+.justify-content-between {
+    justify-content: space-between !important;
+}
+#logo {
+    margin-top: -20px;
+    margin-left: -120px;
+}
+#nav-menu-container {
+    margin: 0;
+}
+.nav-menu, .nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-menu ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+}
+.nav-menu li {
+    position: relative;
+    white-space: nowrap;
+}
+.nav-menu > li {
+    float: left;
+}
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+    display: block;
+}
+.nav-menu ul ul {
+    top: 0;
+    left: 100%;
+}
+.nav-menu ul li {
+    min-width: 180px;
+    text-align: left;
+}
+
+  /* стиль меню */
+.nav-menu a {
+    padding: 0 8px 0px 8px;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    outline: none;
+}
+.nav-menu > li {
+    margin-left: 20px;
+}
+.nav-menu ul {
+    margin: 16px 0 0 0;
+    padding: 10px;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    background: #fff;
+}
+.nav-menu ul li {
+    transition: 0.3s;
+} 
+.nav-menu ul li a {
+    padding: 10px;
+    color: #333;
+    transition: 0.3s;
+    display: block;
+    font-size: 12px;
+    text-transform: none;
+}
+.nav-menu ul li:hover > a {
+    color: #b68834;
+}
+.nav-menu ul ul {
+    margin: 0;
+}
+/* анимация меню */
+.menu-active{
+    transition: 0.5s; /* Время эффекта */
+    text-align: center; 
+  }
+.menu-active:hover {
+    transform: scale(1.6); /* Увеличиваем масштаб */
+}
+.buyCoffee {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+}
+/*Навигационное меню*/
 
 /*Банер*/
 .banner-area {

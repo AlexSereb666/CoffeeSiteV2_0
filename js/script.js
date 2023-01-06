@@ -1,12 +1,10 @@
 // все работает только после того, как страница будет загружена //
 document.addEventListener('DOMContentLoaded', () => { 
-
-    // при прокрутки вниз будет появляться полоса в меню навигации //
-    // при прокрутки вверх до упора эта полоса будет исчезать //
-    let navMenu = document.getElementById("header");
+    
     let video = document.querySelector(".video-play");
     video.play();
 
+    let navMenu = document.getElementById("header");
     window.addEventListener("scroll", (e) => {
         // меню навигации //
         if (window.scrollY >= 100) {
@@ -16,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navMenu.style.backgroundColor = "rgba(48, 40, 39, 0)";
         }
     });
-
+    
     // когда видео заканчивается, оно перематывается вначало //
     video.addEventListener("ended", (e) => {
         video.currentTime = 0;
