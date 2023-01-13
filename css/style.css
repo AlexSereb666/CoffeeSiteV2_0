@@ -453,7 +453,7 @@ body {
         font-size: 16px;
     }
     .banner-content {
-        margin-top: -70px;
+        margin-top: -150px;
         margin-left: 30px;
     }
 }
@@ -477,7 +477,7 @@ body {
         font-size: 12px;
     }
     .banner-content {
-        margin-top: -20px;
+        margin-top: -210px;
         margin-left: 30px;
     }
 }
@@ -1549,3 +1549,147 @@ body {
     }
   }
   /*Футер сайта*/
+
+  /*отзывы*/
+  .koguvcavis-varazdel {
+    padding: 25px 0;
+    background: #adadad;
+    color: #2f2f2f;
+    text-align: center;
+  }
+  .sestim-donials{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  .sectionesag {
+    width: 195px;
+    height: 3px;
+    background: #498a2d;
+    margin: 23px auto;
+  }
+  .sagestim-lonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .vemotau-vokusipol{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+  .testimonial {
+    background: #f9f4f4;
+    padding: 28px;
+  }
+  .testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .gecedanam{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  .apogered-gselected{
+    color: #53b32b;
+    margin-bottom: 20px;
+  }
+  .center-comment {
+    text-align: center;
+  }
+/*кнопка больше отзывов*/
+  div[class*=box] {
+    height: 33.33%;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-1 { 
+    background-color: #adadad; 
+}
+  .btn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .btn-one {
+    color: #ffffff;
+    transition: all 0.3s;
+    position: relative;
+  }
+  .btn-one span {
+    transition: all 0.3s;
+  }
+  .btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    transform: scale(0.1, 1);
+  }
+  .btn-one:hover span {
+    letter-spacing: 2px;
+  }
+  .btn-one:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+  .btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.253);
+  }
+  .btn-one:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+  }
+  
+  /*кнопка больше отзывов*/
+  @media screen and (max-width:960px) {
+  .vemotau-vokusipol{
+    flex: 100%;
+    max-width: 80%;
+  }
+  .sagestim-lonials{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  }
+  @media screen and (max-width:600px) {
+  .vemotau-vokusipol{
+    flex: 100%;
+    max-width: 100%;
+  }
+  .sagestim-lonials{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  }
+  /*отзывы*/
