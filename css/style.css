@@ -1573,8 +1573,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .vemotau-vokusipol{
     flex: 33.33%;
@@ -1677,19 +1677,11 @@ body {
     flex: 100%;
     max-width: 80%;
   }
-  .sagestim-lonials{
-    margin-left: 0px;
-    margin-right: 0px;
-  }
   }
   @media screen and (max-width:600px) {
   .vemotau-vokusipol{
     flex: 100%;
     max-width: 100%;
-  }
-  .sagestim-lonials{
-    margin-left: 0px;
-    margin-right: 0px;
   }
   }
   /*отзывы*/
