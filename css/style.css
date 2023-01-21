@@ -123,7 +123,7 @@ body {
     margin: 0;
     padding: 80px 0;
     list-style: none;
-    background-color: #8a634093;
+    background-color: #855933de;
     box-shadow: 2px 2px 6px rgb(255, 255, 255);
     transition-duration: .25s;
 }
@@ -1551,86 +1551,86 @@ body {
   /*Футер сайта*/
 
   /*отзывы*/
-  .koguvcavis-varazdel {
+.koguvcavis-varazdel {
     padding: 25px 0;
     background: #adadad;
     color: #2f2f2f;
     text-align: center;
-  }
-  .sestim-donials{
+}
+.sestim-donials{
     max-width: 1200px;
     margin: auto;
     overflow: hidden;
     padding: 0 20px;
-  }
-  .sectionesag {
+}
+.sectionesag {
     width: 195px;
     height: 3px;
     background: #498a2d;
     margin: 23px auto;
-  }
-  .sagestim-lonials{
+}
+.sagestim-lonials{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-left: 5%;
     margin-right: 5%;
-  }
-  .vemotau-vokusipol{
+}
+.vemotau-vokusipol{
     flex: 33.33%;
     max-width: 33.33%;
     box-sizing: border-box;
     padding: 15px;
-  }
-  .testimonial {
+}
+.testimonial {
     background: #f9f4f4;
     padding: 28px;
-  }
-  .testimonial img{
+}
+.testimonial img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-  }
-  .gecedanam{
+}
+.gecedanam{
     font-size: 20px;
     text-transform: uppercase;
     margin: 20px 0;
-  }
-  .apogered-gselected{
+}
+.apogered-gselected{
     color: #53b32b;
     margin-bottom: 20px;
-  }
-  .center-comment {
+}
+.center-comment {
     text-align: center;
-  }
+}
 /*кнопка больше отзывов*/
-  div[class*=box] {
+div[class*=box] {
     height: 33.33%;
     width: 100%; 
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .box-1 { 
+}
+.box-1 { 
     background-color: #adadad; 
 }
-  .btn {
+.btn {
     line-height: 50px;
     height: 50px;
     text-align: center;
     width: 250px;
     cursor: pointer;
     font-size: 20px;
-  }
-  .btn-one {
+}
+.btn-one {
     color: #ffffff;
     transition: all 0.3s;
     position: relative;
-  }
-  .btn-one span {
+}
+.btn-one span {
     transition: all 0.3s;
-  }
-  .btn-one::before {
+}
+.btn-one::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1647,15 +1647,15 @@ body {
     border-top-color: rgb(255, 255, 255);
     border-bottom-color: rgb(255, 255, 255);
     transform: scale(0.1, 1);
-  }
-  .btn-one:hover span {
+}
+.btn-one:hover span {
     letter-spacing: 2px;
-  }
-  .btn-one:hover::before {
+}
+.btn-one:hover::before {
     opacity: 1; 
     transform: scale(1, 1); 
-  }
-  .btn-one::after {
+}
+.btn-one::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1665,23 +1665,170 @@ body {
     z-index: 1;
     transition: all 0.3s;
     background-color: rgba(255, 255, 255, 0.253);
-  }
-  .btn-one:hover::after {
+}
+.btn-one:hover::after {
     opacity: 0; 
     transform: scale(0.1, 1);
-  }
-  
-  /*кнопка больше отзывов*/
-  @media screen and (max-width:960px) {
+}
+/*кнопка больше отзывов*/
+@media screen and (max-width:960px) {
   .vemotau-vokusipol{
     flex: 100%;
     max-width: 80%;
   }
-  }
-  @media screen and (max-width:600px) {
+}
+@media screen and (max-width:600px) {
   .vemotau-vokusipol{
     flex: 100%;
     max-width: 100%;
   }
-  }
-  /*отзывы*/
+}
+/*отзывы*/
+
+/*новости*/
+span.s1 {
+    position: absolute;
+    top: 0;
+    font-size: 15rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #3C4447;
+    margin-top: 50%;
+    margin-left: 1%;
+}	
+span.s2 {
+    top: 0;
+    font-weight: 800;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 15rem;
+    text-transform: uppercase;
+    color: #3C4447;
+    margin-top: 80%;
+    margin-right: 1%;
+}
+.card {
+    position : relative;
+	height: 450px;
+	width: 900px;
+	margin : 200px auto;
+	background-color : #FFF;
+	-webkit-box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
+}
+.thumbnail {
+    float : left;
+	position : relative ;
+	left : 30px;
+	top : -30px;
+	height : 320px;
+	width : 530px;
+	-webkit-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.75);
+	overflow: hidden;
+}
+img.left {
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	height: auto;
+	width: 100%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.right {
+    margin-left : 590px;
+	margin-right : 20px;
+}
+.right h1 {
+    padding-top : 15px;
+	font-size : 1.3rem;
+	color : #4B4B4B;
+}	
+.author {
+    background-color : #7ab5fc;
+	height : 30px;
+	width : 110px;
+	border-radius : 20px;
+}
+.author img {
+    padding-top : 5px;
+	margin-left : 10px;
+	float : left;
+	height : 23px;
+	width : 23px;
+	border-radius : 50%;
+}
+.author h2 {
+    padding-top : 4px;
+	margin-right : 20px;
+	text-align : right;
+	font-size : 0.8rem;
+	color :white;
+}	
+.separator {
+    margin-top : 10px;
+	border : 1px solid #C3C3C3;
+}
+.right p {
+    text-align: justify;
+	padding-top : 10px;
+	font-size : 0.95rem;
+	line-height: 150%;
+	color : #4B4B4B;
+}
+.num_new {
+    position : absolute;
+	left : 30px;
+	bottom : 30px;
+	font-size : 6rem;
+	color : #C3C3C3;
+}
+.mounth {
+    position : absolute;
+	left : 30px;
+	bottom : 5px;
+	font-size : 2rem;
+	color : #C3C3C3;
+}	
+/* Those futur buttons */
+.new-butt {
+    margin-left : 180px;
+}
+.new-butt li {
+    display: inline;
+	list-style: none;
+	padding-right: 60px;
+	color : #7B7B7B;
+}
+.new-butt img {
+    width: 35px;
+    height: 35px;
+}
+
+/* кнопка переключения */
+.fab {
+    position : absolute;
+	right : 50px;
+	bottom : -40px;
+	box-sizing: border-box;
+	padding-top: 18px;
+	background-color : #1875D0;
+	width : 80px;
+	height : 80px;
+	color : white;
+	text-align : center;
+	border-radius : 50%;
+	-webkit-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.75);
+}
+.fab:hover{
+    background-color:#53b32b;
+} 
+	
+/*новости*/

@@ -10,4 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
             navMenu.style.backgroundColor = "rgba(48, 40, 39, 0)";
         }
     });
+
+    // лайк на новости //
+    let likeNews = document.querySelector('.like-heart');
+    likeNews.addEventListener('mouseover', () => {
+        
+
+
+    });
 });
