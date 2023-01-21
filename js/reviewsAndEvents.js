@@ -18,4 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     });
+    likeNews.addEventListener('mouseout', () => {
+
+
+        
+    });
+    likeNews.addEventListener('click', () => {
+
+
+
+    });
 });

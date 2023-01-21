@@ -1830,5 +1830,202 @@ img.left {
 .fab:hover{
     background-color:#53b32b;
 } 
-	
+@media screen and (max-width:1670px) {
+    span.s1 {
+        margin-top: 60%;
+    }	
+    span.s2 {
+        margin-top: 90%;
+    }
+}
+@media screen and (max-width:1500px) {
+    span.s1 {
+        margin-top: 70%;
+    }	
+    span.s2 {
+        margin-top: 100%;
+    }
+}	
+@media screen and (max-width:1300px) {
+    span.s1 {
+        font-size: 10rem;
+        margin-top: 80%;
+    }	
+    span.s2 {
+        font-size: 10rem;
+        margin-top: 120%;
+    }
+}
+@media screen and (max-width:1170px) {
+    span.s1 {
+        font-size: 10rem;
+        margin-top: 85%;
+        margin-left: 10%;
+    }	
+    span.s2 {
+        font-size: 10rem;
+        margin-top: 140%;
+        margin-right: 10%;
+    }
+}
+@media screen and (max-width:1050px) {
+    span.s1 {
+        font-size: 10rem;
+        margin-top: 95%;
+        margin-left: 14%;
+    }	
+    span.s2 {
+        font-size: 10rem;
+        margin-top: 155%;
+        margin-right: 14%;
+    }
+}
+@media screen and (max-width:960px) {
+    span.s1 {
+        font-size: 10rem;
+        margin-top: 105%;
+        margin-left: 14%;
+    }	
+    span.s2 {
+        font-size: 10rem;
+        margin-top: 175%;
+        margin-right: 14%;
+    }
+}
+@media screen and (max-width:860px) {
+    .card {
+        width: 90%;
+    }
+    .right h1{
+        font-size: 15px;
+    }
+    .right p {
+        font-size: 10px;
+    }
+    span.s1 {
+        font-size: 8rem;
+        margin-top: 120%;
+        margin-left: 7%;
+    }	
+    span.s2 {
+        font-size: 8rem;
+        margin-top: 200%;
+        margin-right: 7%;
+    }
+}
+@media screen and (max-width:800px) {
+    .thumbnail {
+        height : 265px;
+        width : 398px;
+    }
+    .right {
+        margin-left : 470px;
+        margin-right : 10px;
+    }
+    .right h1 {
+        font-size : 13px;
+    }
+    .author {
+        height : 22px;
+        width : 90px;
+    }
+    .author img {
+        padding-top : 6px;
+        margin-left : 10px;
+        height : 15px;
+        width : 15px;
+    }
+    .author h2 {
+        margin-right : 18px;
+        font-size : 10px;
+    }
+    .right p {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    .card {
+        height: 330px;
+    }
+    .num_new {
+        font-size: 42px;
+        bottom: 25px;
+    }
+    .mounth {
+        font-size: 28px;
+        bottom: 0px;
+    }
+    .new-butt {
+        margin-left : 160px;
+        margin-top: 30px;
+    }
+    .new-butt li {
+        padding-right: 30px;
+    }
+    .new-butt img {
+        width: 25px;
+        height: 25px;
+    }
+    .fab {
+        right : 50px;
+        bottom : -25px;
+        padding-top: 14px;
+        width : 70px;
+        height : 70px;
+        font-size: 14px;
+    }
+    span.s1 {
+        font-size: 5rem;
+        margin-top: 135%;
+        margin-left: 7%;
+    }	
+    span.s2 {
+        font-size: 5rem;
+        margin-top: 195%;
+        margin-right: 7%;
+    }
+    .card {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+}
+@media screen and (max-width:750px) {
+    span.s1 {
+        font-size: 5rem;
+        margin-top: 140%;
+    }	
+    span.s2 {
+        font-size: 5rem;
+        margin-top: 203%;
+    }
+    .new-butt {
+        margin-left : 25%;
+        margin-top: -5%;
+    }
+}
+@media screen and (max-width:730px) {
+    .right p {
+        font-size: 10px;
+        margin-top: -2px;
+        margin-left: -20px;
+    }
+    .right h1 {
+        font-size: 12px;
+        margin-left: -20px;   
+    }
+    .author {
+        margin-left: -20px;
+    }
+    span.s1 {
+        font-size: 5rem;
+        margin-top: 143%;
+    }	
+    span.s2 {
+        font-size: 5rem;
+        margin-top: 208%;
+    }
+    .new-butt {
+        margin-left : 160px;
+        margin-top: 25px;
+    }
+}
 /*новости*/
