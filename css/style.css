@@ -2028,4 +2028,224 @@ img.left {
         margin-top: 25px;
     }
 }
+@media screen and (max-width:700px) {
+    span.s1 {
+        font-size: 5rem;
+        margin-top: 150%;
+    }	
+    span.s2 {
+        font-size: 5rem;
+        margin-top: 218%;
+    }
+    .new-butt {
+        margin-left : 140px;
+        margin-top: -30px;
+    }
+    .fab {
+        right : 50px;
+        bottom : -25px;
+        padding-top: 12px;
+        width : 60px;
+        height : 60px;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:680px) {
+    .thumbnail {
+        height : 198px;
+        width : 300px;
+    }
+    .right {
+        margin-left : 370px;
+    }
+    .right h1 {
+        font-size : 13px;
+    }
+    .card {
+        height: 260px;
+    }
+    .num_new {
+        font-size: 36px;
+        bottom: 30px;
+    }
+    .mounth {
+        font-size: 24px;
+        bottom: 5px;
+    }
+    .new-butt {
+        margin-left : 100px;
+        height: 20px;
+    }
+    .new-butt li {
+        padding-right: 25px;
+        text-align: left;
+    }
+    .new-butt img {
+        width: 20px;
+        height: 20px;
+    }
+    span.s1 {
+        font-size: 3rem;
+        margin-top: 156%;
+    }	
+    span.s2 {
+        font-size: 3rem;
+        margin-top: 212%;
+    }
+    .card {
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+}
+@media screen and (max-width:650px) {
+    .right p {
+        font-size: 9px;
+    }
+    .right h1 {
+        font-size: 11px;
+    }
+    .new-butt {
+        margin-top : 0px;
+        height: 20px;
+    }
+    span.s1 {
+        font-size: 3rem;
+        margin-top: 165%;
+    }	
+    span.s2 {
+        font-size: 3rem;
+        margin-top: 222%;
+    }
+}
+@media screen and (max-width: 480px) {  
+    .right {
+        position: absolute;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 170px;
+    }
+    .num_new {
+        bottom: -10px;
+        left: 5px;
+    }
+    .mounth {
+        bottom: -5px;
+        left: 50px;
+    }
+    .card {
+        height: 370px;
+    }
+    .new-butt {
+        position: absolute;
+        margin-top: 55%;
+        margin-left: 20%;
+    }
+    span.s1 {
+        font-size: 5rem;
+        margin-top: 215%;
+    }	
+    span.s2 {
+        font-size: 5rem;
+        margin-top: 325%;
+    }
+    .thumbnail {
+        height : 198px;
+        width : 350px;
+    }
+}
+@media screen and (max-width: 425px) {  
+    .thumbnail {
+        height : 198px;
+        width : 300px;
+    }
+    span.s1 {
+        font-size: 5rem;
+        margin-top: 245%;
+    }	
+    span.s2 {
+        font-size: 5rem;
+        margin-top: 370%;
+    }
+    .new-butt {
+        margin-top: 62%;
+        margin-left: 25%;
+    }
+    .right h1 {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 400px) { 
+    .thumbnail {
+        height : 186px;
+        width : 278px;
+    }
+    .right h1 {
+        margin-top: -6%;
+        margin-left: 0%;
+    }
+    .new-butt {
+        margin-top: 67%;
+        margin-left: 25%;
+    }
+    span.s1 {
+        font-size: 5rem;
+        margin-top: 263%;
+    }	
+    span.s2 {
+        font-size: 5rem;
+        margin-top: 395%;
+    }
+}
+@media screen and (max-width: 385px) { 
+    span.s1 {
+        font-size: 4rem;
+        margin-top: 270%;
+    }	
+    span.s2 {
+        font-size: 4rem;
+        margin-top: 400%;
+    }
+    .card {
+        margin-top: 25%;
+        margin-bottom: 25%;
+    }
+    .new-butt {
+        padding-left: 10%;
+        padding-top: 2%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .new-butt img {
+        width: 18px;
+        height: 18px;
+    }
+    .new-butt {
+        padding-top: 4%;
+    }
+    span.s1 {
+        font-size: 4rem;
+        margin-top: 275%;
+    }	
+    span.s2 {
+        font-size: 4rem;
+        margin-top: 410%;
+    }
+}
+@media screen and (max-width: 365px) {  
+    .num_new {
+        font-size: 28px;
+    }
+    .mounth {
+        font-size: 22px;
+        margin-bottom: 1%;
+    }
+    span.s1 {
+        font-size: 4rem;
+        margin-top: 285%;
+    }	
+    span.s2 {
+        font-size: 4rem;
+        margin-top: 423%;
+    }
+}
 /*новости*/
