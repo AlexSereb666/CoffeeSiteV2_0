@@ -39,7 +39,7 @@ body {
 #logoGam {
     display: none;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 990px) {
     .hamburger-menu {
         display: block;
     }
@@ -181,11 +181,6 @@ body {
     text-align: right;
     margin-right: 5px;
 }  
-.header-top ul li {
-    color: #fff;
-    display: inline-block;
-    margin-right: 20px;
-}
 .header-top ul li a {
     color: #fff;
 }
@@ -213,12 +208,47 @@ body {
     align-items: center !important;
 }
 .justify-content-between {
-    justify-content: space-between !important;
+    justify-content: space-between !important;   
 }
-#logo {
-    margin-top: -20px;
-    margin-left: -120px;
+
+
+
+
+@media screen and (max-width: 1400px) {
+    #logo {
+        padding-left: 2%;
+    }
 }
+@media screen and (max-width: 1350px) {
+    #logo {
+        padding-left: 4%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    #logo {
+        padding-left: 6%;
+    }
+}
+@media screen and (max-width: 1250px) {
+    #logo {
+        padding-left: 8%;
+    }
+}
+@media screen and (max-width: 1050px) {
+    #logo {
+        padding-left: 10%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #logo img {
+        width: 255px;
+        height: 68px;
+    }
+    #logo {
+        padding-left: 14%;
+    }
+}
+
 #nav-menu-container {
     margin: 0;
 }
@@ -315,15 +345,19 @@ body {
     align-items: center !important;
 }
 .justify-content-start {
-    justify-content: flex-start !important;
     height: 1007px;
 }
-.justify-content-start {
-    justify-content: flex-start !important;
+.containerBanner {
+    max-width: 1350px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .banner-content {
-    margin-top: -250px;
-    margin-left: -100px;
+    padding-bottom: 12%;
+    margin-left: 1%;
 } 
 .banner-content h1 {
     color: #fff;
@@ -426,59 +460,50 @@ body {
 
 
 @media screen and (max-width: 1375px) {
-    .banner-content {
-        margin-top: -170px;
-        margin-left: 50px;
+    .containerBanner {
+        max-width: 1200px;
     }
 }
 
 @media screen and (max-width: 770px) {
-    .banner-content h1 
-    {
+    .banner-content h1 {
         font-size: 60px;
     }
-    .banner-content {
-        margin-top: -170px;
-        margin-left: 20px;
+    .containerBanner {
+        max-width: 700px;
     }
-
 }
 @media screen and (max-width: 580px) {
-    .banner-content h1 
-    {
+    .banner-content h1 {
         font-size: 50px;
     }
-    .banner-content h6 
-    {
+    .banner-content h6 {
         font-size: 16px;
     }
-    .banner-content {
-        margin-top: -150px;
-        margin-left: 30px;
+    .containerBanner {
+        max-width: 500px;
     }
 }
 @media screen and (max-width: 485px) {  
-    .banner-content h1 
-    {
+    .banner-content h1 {
         font-size: 40px;
     }
-    .banner-content h6 
-    {
+    .banner-content h6 {
         font-size: 14px;
+    }
+    .containerBanner {
+        max-width: 450px;
     }
 }
 @media screen and (max-width: 400px) {
-    .banner-content h1 
-    {
+    .banner-content h1 {
         font-size: 30px;
     }
-    .banner-content h6 
-    {
+    .banner-content h6 {
         font-size: 12px;
     }
-    .banner-content {
-        margin-top: -210px;
-        margin-left: 30px;
+    .containerBanner {
+        max-width: 300px;
     }
 }
 /*Банер*/
@@ -667,14 +692,14 @@ body {
     align-items:center
 }
 .sidepanel__text {
-    width:120px;
-    height:120px;
+    width:150px;
+    height:150px;
     font-size:15px;
-    color:rgb(224, 66, 66)
+    color:rgb(224, 66, 66);
 }
 .sidepanel__text span {
     display:flex;
-    transform:rotate(-90deg) translateX(-50px)
+    transform:rotate(-90deg) translateX(-50px);
 }
 .sidepanel__divider {
     width:1px;
@@ -1713,7 +1738,7 @@ span.s2 {
     margin-top: 80%;
     margin-right: 1%;
 }
-.card {
+.card { 
     position : relative;
 	height: 450px;
 	width: 900px;
@@ -1724,8 +1749,9 @@ span.s2 {
 	box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
 }
 .thumbnail {
-    float : left;
-	position : relative ;
+    /*float: left;
+    position: relative;*/
+	position : absolute ;
 	left : 30px;
 	top : -30px;
 	height : 320px;
@@ -1746,8 +1772,8 @@ img.left {
 	transform: translate(-50%,-50%);
 }
 .right {
-    margin-left : 590px;
-	margin-right : 20px;
+    padding-left: 65%;
+    padding-right: 2%;
 }
 .right h1 {
     padding-top : 15px;
@@ -1800,7 +1826,7 @@ img.left {
 	font-size : 2rem;
 	color : #C3C3C3;
 }	
-/* Those futur buttons */
+/* кнопка */
 .new-butt {
     margin-left : 180px;
 }
@@ -1946,6 +1972,9 @@ img.left {
         margin-top: 200%;
         margin-right: 7%;
     }
+    .right {
+        padding-left: 75%;
+    }
 }
 @media screen and (max-width:800px) {
     .thumbnail {
@@ -1953,8 +1982,7 @@ img.left {
         width : 398px;
     }
     .right {
-        margin-left : 470px;
-        margin-right : 10px;
+        padding-left: 65%;
     }
     .right h1 {
         font-size : 13px;
@@ -2043,6 +2071,9 @@ img.left {
         margin-left : 25%;
         margin-top: -5%;
     }
+    .right {
+        padding-left: 68%;
+    }
 }
 @media screen and (max-width:730px) {
     .right p {
@@ -2068,6 +2099,9 @@ img.left {
     .new-butt {
         margin-left : 160px;
         margin-top: 25px;
+    }
+    .right {
+        padding-left: 72%;
     }
 }
 @media screen and (max-width:700px) {
@@ -2099,6 +2133,9 @@ img.left {
         right : 120px;
         bottom : -25px;
     }
+    .right {
+        padding-left: 75%;
+    }
 }
 @media screen and (max-width:680px) {
     .thumbnail {
@@ -2106,7 +2143,7 @@ img.left {
         width : 300px;
     }
     .right {
-        margin-left : 370px;
+        padding-left: 62%;
     }
     .right h1 {
         font-size : 13px;
@@ -2172,12 +2209,16 @@ img.left {
     .fab-up {
         right: 100px;
     }
+    .right {
+        padding-left: 65%;
+        padding-right: 2%;
+    }
 }
 @media screen and (max-width: 480px) {  
     .right {
         position: absolute;
-        margin-left: 30px;
-        margin-right: 30px;
+        padding-left: 10%;
+        padding-right: 5%;
         margin-top: 170px;
     }
     .num_new {
@@ -2251,6 +2292,10 @@ img.left {
         font-size: 5rem;
         margin-top: 395%;
     }
+    .right {
+        padding-left: 10%;
+        padding-right: 8%;
+    }
 }
 @media screen and (max-width: 385px) { 
     span.s1 {
@@ -2302,6 +2347,13 @@ img.left {
     span.s2 {
         font-size: 4rem;
         margin-top: 423%;
+    }
+    .thumbnail {
+        height : 165px;
+        width : 250px;
+    }
+    .right {
+        margin-top: 50%;
     }
 }
 /*новости*/
