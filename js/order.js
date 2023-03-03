@@ -168,7 +168,7 @@
     });
     let ristrettoSugar = document.getElementById("ristrettoSugar");
     ristrettoSugar.addEventListener('input', (e) => {
-        calculationOfTheOrderCost(ristrettoeSugar);
+        calculationOfTheOrderCost(ristrettoSugar);
     });
     let ristrettoMilk = document.getElementById("ristrettoMilk");
     ristrettoMilk.addEventListener('click', (e) => {
