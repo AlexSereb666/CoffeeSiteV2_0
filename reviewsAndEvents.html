@@ -45,7 +45,7 @@
                         <li class="menu-active"><a href="index.html#coffee">Меню</a></li>
                         <li class="menu-active"><a href="reviewsAndEvents.html#review">Отзывы</a></li>
                         <li class="menu-active"><a href="reviewsAndEvents.html#blog">События</a></li>
-                        <li class="menu-active"><a href="#orders">Заказать</a></li>
+                        <li class="menu-active"><a href="#openModal">Заказать</a></li>
                         <li class="menu-active"><a href="#buy"><img class="buyCoffee" src="img/Корзина.png"></a></li>
                     </ul>
                 </nav>
@@ -65,7 +65,7 @@
                       <li><a class="menu__item" href="index.html#coffee">Меню</a></li>
                       <li><a class="menu__item" href="reviewsAndEvents.html#review">Отзывы</a></li>
                       <li><a class="menu__item" href="reviewsAndEvents.html#blog">События</a></li>
-                      <li><a class="menu__item" href="#orders">Заказать</a></li>
+                      <li><a class="menu__item" href="#openModal">Заказать</a></li>
                       <li><a class="menu__item" href="#buy">Корзина</a></li>
                     </ul>
                 </div> 		
@@ -84,12 +84,204 @@
                         Начни свой день <br>
                         с бодрящего кофе				
                     </h1>
-                    <a href="#" class="primary-btn text-uppercase">Заказать</a>
+
+                    <!--Модальное окно кнопка-->
+                    <a href="#openModal" class="primary-btn text-uppercase">Заказать</a>
+                    <!--Модальное окно кнопка-->
+
                 </div>											
             </div>
         </div>
     </section>
 	<!-- банер -->
+
+    <!--Модальное окно-->
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Оформить заказ</h3>
+              <a href="#close" title="Close" class="close">X</a>
+            </div>
+            <div class="modal-body"> 
+              <form>
+                <h3>Выбор кофе</h3>
+                <div class="containerCoffeeModal">
+
+                    Капучино:<input type="number" name="someid" placeholder="0" min="0" class="textBoxCoffee" id="CappuccinoNum"/>
+                    Сахар:<input type="number" name="someid" placeholder="0" min="0" class="textBoxCoffee" id="CappuccinoSugar"/>
+                    Молоко: <input type="checkbox" name="scales" id="CappuccinoMilk">
+                    <br>
+                    Добавки:
+                    <select id="selectvalue" class="CappuccinoSelect">
+                        <option>Нет</option>
+                        <option>Карамель</option>    
+                        <option>Шоколад</option>
+                        <option>Покислее</option>
+                        <option>Поострее</option>
+                        <option>Погорчее</option>
+                    </select>
+
+                </div>
+                <div class="containerCoffeeModal">
+                    
+                    Американо:<input type="number" name="someid" placeholder="0" min="0" class="textBoxCoffee" id="AmericanoNum"/>
+                    Сахар:<input type="number" name="someid" placeholder="0" min="0" class="textBoxCoffee" id="AmericanoSugar"/>
+                    Молоко: <input type="checkbox" name="scales" id="AmericanoMilk">
+                    <br>
+                    Добавки:
+                    <select id="selectvalue" class="AmericanoSelect">
+                        <option>Нет</option>
+                        <option>Карамель</option>    
+                        <option>Шоколад</option>
+                        <option>Покислее</option>
+                        <option>Поострее</option>
+                        <option>Погорчее</option>
+                    </select>
+
+                </div>
+                <div class="containerCoffeeModal">
+                    
+                    Эспрессо:<input type="number" name="someid" placeholder="0" min="0" class="textBoxCoffee" id="EspressoNum"/>
+                    Сахар:<input type="number" name="someid" placeholder="0" min="0" class="textBoxCoffee" id="EspressoSugar"/>
+                    Молоко: <input type="checkbox" name="scales" id="EspressoMilk">
+                    <br>
+                    Добавки:
+                    <select id="selectvalue" class="EspressoSelect">
+                        <option>Нет</option>
+                        <option>Карамель</option>    
+                        <option>Шоколад</option>
+                        <option>Покислее</option>
+                        <option>Поострее</option>
+                        <option>Погорчее</option>
+                    </select>
+
+                </div>
+                <div class="containerCoffeeModal">
+
+                    Макиато:<input type="number" name="someid" placeholder="0" min="0" class="textBoxCoffee" id="MacchiatoNum"/>
+                    Сахар:<input type="number" name="someid" placeholder="0" min="0" class="textBoxCoffee" id="MacchiatoSugar"/>
+                    Молоко: <input type="checkbox" name="scales" id="MacchiatoMilk">
+                    <br>
+                    Добавки:
+                    <select id="selectvalue" class="MacchiatoSelect">
+                        <option>Нет</option>
+                        <option>Карамель</option>    
+                        <option>Шоколад</option>
+                        <option>Покислее</option>
+                        <option>Поострее</option>
+                        <option>Погорчее</option>
+                    </select>
+
+                </div>
+                <div class="containerCoffeeModal">
+                    
+                    Флэт уайт:<input type="number" name="someid" placeholder="0" min="0" class="textBoxCoffee" id="flatWhiteNum"/>
+                    Сахар:<input type="number" name="someid" placeholder="0" min="0" class="textBoxCoffee" id="flatWhiteSugar"/>
+                    Молоко: <input type="checkbox" name="scales" id="flatWhiteMilk">
+                    <br>
+                    Добавки:
+                    <select id="selectvalue" class="flatWhiteSelect">
+                        <option>Нет</option>
+                        <option>Карамель</option>    
+                        <option>Шоколад</option>
+                        <option>Покислее</option>
+                        <option>Поострее</option>
+                        <option>Погорчее</option>
+                    </select>
+
+                </div>
+                <div class="containerCoffeeModal">
+                    
+                    Латте:<input type="number" name="someid" placeholder="0" min="0" class="textBoxCoffee" id="latteNum"/>
+                    Сахар:<input type="number" name="someid" placeholder="0" min="0" class="textBoxCoffee" id="latteSugar"/>
+                    Молоко: <input type="checkbox" name="scales" id="latteMilk">
+                    <br>
+                    Добавки:
+                    <select id="selectvalue" class="latteSelect">
+                        <option>Нет</option>
+                        <option>Карамель</option>    
+                        <option>Шоколад</option>
+                        <option>Покислее</option>
+                        <option>Поострее</option>
+                        <option>Погорчее</option>
+                    </select>
+
+                </div>
+                <div class="containerCoffeeModal">
+                    
+                    Раф кофе:<input type="number" name="someid" placeholder="0" min="0" class="textBoxCoffee" id="rafCoffeeNum"/>
+                    Сахар:<input type="number" name="someid" placeholder="0" min="0" class="textBoxCoffee" id="rafCoffeeSugar"/>
+                    Молоко: <input type="checkbox" name="scales" id="rafCoffeeMilk">
+                    <br>
+                    Добавки:
+                    <select id="selectvalue" class="rafCoffeeSelect">
+                        <option>Нет</option>
+                        <option>Карамель</option>    
+                        <option>Шоколад</option>
+                        <option>Покислее</option>
+                        <option>Поострее</option>
+                        <option>Погорчее</option>
+                    </select>
+                
+                </div>
+                <div class="containerCoffeeModal">
+                    
+                    Ристретто:<input type="number" name="someid" placeholder="0" min="0" class="textBoxCoffee" id="ristrettoNum"/>
+                    Сахар:<input type="number" name="someid" placeholder="0" min="0" class="textBoxCoffee" id="ristrettoSugar"/>
+                    Молоко: <input type="checkbox" name="scales" id="ristrettoMilk">
+                    <br>
+                    Добавки:
+                    <select id="selectvalue" class="ristrettoSelect">
+                        <option>Нет</option>
+                        <option>Карамель</option>    
+                        <option>Шоколад</option>
+                        <option>Покислее</option>
+                        <option>Поострее</option>
+                        <option>Погорчее</option>
+                    </select>
+                
+                </div>
+                <div class="containerCoffeeModal">
+                    
+                    Аффогато:<input type="number" name="someid" placeholder="0" min="0" class="textBoxCoffee" id="affogatoNum"/>
+                    Сахар:<input type="number" name="someid" placeholder="0" min="0" class="textBoxCoffee" id="affogatoSugar"/>
+                    Молоко: <input type="checkbox" name="scales" id="affogatoMilk">
+                    <br>
+                    Добавки:
+                    <select id="selectvalue" class="affogatoSelect">
+                        <option>Нет</option>
+                        <option>Карамель</option>    
+                        <option>Шоколад</option>
+                        <option>Покислее</option>
+                        <option>Поострее</option>
+                        <option>Погорчее</option>
+                    </select>
+                
+                </div>
+                <div class="personalData">
+                    Имя: <input type="text" name="someid" placeholder="Подпись на стаканчике" class="textBoxCoffeeName"/>
+                </div>
+                <div class="personalData">
+                    Адрес: <input type="text" name="someid" placeholder="Адрес доставки" class="textBoxCoffeeAddress"/>
+                </div>
+                <div class="personalData">
+                    Телефон: <input type="number" name="someid" placeholder="+7 (000) 000-00-00" class="textBoxCoffeePhone"/>
+                </div>
+                <div class="priceAndBtnCoffee">
+                    <span class="priceCoffee">Стоимость: 0 руб.</span>
+                </div>
+                <div>   
+                    <span>
+                        <a class="btnBuyCoffee">Оформить заказ</a>
+                    </span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--Модальное окно-->
 
     <!-- новости -->
     <div class="fond" id="blog">
@@ -101,27 +293,27 @@
             <img class="left" src="img/News.png">
         </div>
         <div class="right">
-            <h1>Новогодние праздники уже на носу! Порадуй себя любимым кофе в новом новогоднем оформлении:)</h1>
+            <h1 id="themeNews">Новогодние праздники уже на носу! Порадуй себя любимым кофе в новом новогоднем оформлении:)</h1>
             <div class="author">
                 <img src="img/avatar.png">
-                <h2>Алексей</h2>
+                <h2 id="nameNews">Алексей</h2>
             </div>
             <div class="separator"></div>
-            <p>С 30 декабря и по 20 января встречайте свои любимые напитки в новых стаканчиках 
+            <p id="descriptionNews">С 30 декабря и по 20 января встречайте свои любимые напитки в новых стаканчиках 
                 в новогоднем стиле. Вам с новогодней ёлкой?) А может быть с звездным небом? Или же
                 Вы предпочитаете с дедом Морозом?) Дизайн на любой вкус и выбор)
             </p>
         </div>
-        <h5 class="num_new">19</h5>
-        <h6 class="mounth">ЯНВАРЯ</h6>
+        <h5 class="num_new">30</h5>
+        <h6 class="mounth">Декабря</h6>
         <ul class="new-butt">
-            <li>0<img src="img/глаз.png"></li>
-            <li>0<img class="like-heart" src="img/heart.png"></li>
+            <li id="lookNews">0<img src="img/глаз.png"></li>
+            <li id="likeNews">0<img class="like-heart" src="img/heart.png"></li>
             <li><img class="message-news" src="img/email.png"></li>
             <li><img class="repost-news" src="img/sharing.png"></i></li>
         </ul>
-        <div class="fab"><i class="fa fa-arrow-down fa-3x"></i></div>
-        <div class="fab-up"><i class="fa fa-arrow-up fa-3x"></i></div>
+        <div class="fab" id="newsDown"><i class="fa fa-arrow-down fa-3x"></i></div>
+        <div class="fab-up" id="newsUp"><i class="fa fa-arrow-up fa-3x"></i></div>
     </div>   
     <!-- новости -->
 
@@ -175,7 +367,7 @@
         </div>
     </div>
     <div class="box-1">
-        <div class="btn btn-one">
+        <div class="btn btn-one" id="commentBtn">
           <span>Больше отзывов</span>
         </div>
     </div>
@@ -294,7 +486,7 @@
                 <div class="col-lg-4">
                     <div class="single-menu">
                         <div class="title-div justify-content-between d-flex">
-                            <h4>Раф коффе</h4>
+                            <h4>Раф кофе</h4>
                             <p class="price">
                                 120₽
                             </p>
@@ -359,5 +551,6 @@
     <!--Футер сайта-->
 
     <script src="js/reviewsAndEvents.js"></script>
+    <script src="js/order.js"></script>
 </body>
 </html>
