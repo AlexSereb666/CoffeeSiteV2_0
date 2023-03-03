@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => { 
     // полный заказ //
     // стоимость итогового заказа и его содержимое //
     function newOrder() {
@@ -343,3 +344,4 @@
             console.log(trueOrder);
         }
     });
+});
