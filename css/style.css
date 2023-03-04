@@ -83,9 +83,10 @@ body {
     top: 0;
     transform: rotate(90deg);
 }
-#menu__toggle:checked ~ .menu__box {
+
+/*#menu__toggle:checked ~ .menu__box {
     left: 0 !important;
-}
+}*/
 .menu__btn {
     position: fixed;
     top: 40px;
@@ -1827,9 +1828,6 @@ img.left {
 	color : #C3C3C3;
 }	
 /* кнопка */
-.new-butt {
-    margin-left : 180px;
-}
 .new-butt li {
     display: inline;
 	list-style: none;
@@ -1840,7 +1838,12 @@ img.left {
     width: 35px;
     height: 35px;
 }
-
+.new-butt {
+    position : absolute;
+	box-sizing: border-box;
+    right : 270px;
+    bottom : 0px;
+}
 /* кнопка переключения */
 .fab {
     position : absolute;
@@ -1860,6 +1863,7 @@ img.left {
 }
 .fab:hover{
     background-color:#53b32b;
+    cursor: pointer;
 } 
 .fab-up {
     position : absolute;
@@ -1879,6 +1883,7 @@ img.left {
 }
 .fab-up:hover {
     background-color:#53b32b;
+    cursor: pointer;
 }
 @media screen and (max-width:1670px) {
     span.s1 {
@@ -2017,7 +2022,7 @@ img.left {
         bottom: 0px;
     }
     .new-butt {
-        margin-left : 160px;
+        margin-left : 100px;
         margin-top: 30px;
     }
     .new-butt li {
@@ -2027,6 +2032,11 @@ img.left {
         width: 25px;
         height: 25px;
     }
+    .panelNews {
+        position: absolute;
+        margin-top: 100px;
+    }
+
     .fab {
         right : 50px;
         bottom : -25px;
@@ -2068,8 +2078,8 @@ img.left {
         margin-top: 203%;
     }
     .new-butt {
-        margin-left : 25%;
-        margin-top: -5%;
+        margin-left : 2%;
+        bottom: 35px;
     }
     .right {
         padding-left: 68%;
@@ -2097,8 +2107,8 @@ img.left {
         margin-top: 208%;
     }
     .new-butt {
-        margin-left : 160px;
         margin-top: 25px;
+        margin-right: -50px;
     }
     .right {
         padding-left: 72%;
@@ -2112,10 +2122,6 @@ img.left {
     span.s2 {
         font-size: 5rem;
         margin-top: 218%;
-    }
-    .new-butt {
-        margin-left : 140px;
-        margin-top: -30px;
     }
     .fab {
         right : 50px;
@@ -2160,7 +2166,7 @@ img.left {
         bottom: 5px;
     }
     .new-butt {
-        margin-left : 100px;
+        left: 70px;
         height: 20px;
     }
     .new-butt li {
@@ -2194,6 +2200,7 @@ img.left {
     .new-butt {
         margin-top : 0px;
         height: 20px;
+        width: 300px;
     }
     span.s1 {
         font-size: 3rem;
@@ -2233,9 +2240,8 @@ img.left {
         height: 370px;
     }
     .new-butt {
-        position: absolute;
-        margin-top: 55%;
-        margin-left: 20%;
+        top: 210px;
+        left: 100px;
     }
     span.s1 {
         font-size: 5rem;
@@ -2264,8 +2270,8 @@ img.left {
         margin-top: 370%;
     }
     .new-butt {
-        margin-top: 62%;
-        margin-left: 25%;
+        top: 215px;
+        left: 80px;
     }
     .right h1 {
         text-align: center;
@@ -2281,8 +2287,8 @@ img.left {
         margin-left: 0%;
     }
     .new-butt {
-        margin-top: 67%;
-        margin-left: 25%;
+        top: 195px;
+        left: 65px;
     }
     span.s1 {
         font-size: 5rem;
@@ -2311,17 +2317,13 @@ img.left {
         margin-bottom: 25%;
     }
     .new-butt {
-        padding-left: 10%;
-        padding-top: 2%;
+        left: 60px;
     }
 }
 @media screen and (max-width: 375px) {
     .new-butt img {
         width: 18px;
         height: 18px;
-    }
-    .new-butt {
-        padding-top: 4%;
     }
     span.s1 {
         font-size: 4rem;
@@ -2333,6 +2335,9 @@ img.left {
     }
 }
 @media screen and (max-width: 365px) {  
+    .new-butt {
+        top: 185px;
+    }
     .num_new {
         font-size: 28px;
     }
@@ -2554,9 +2559,21 @@ img.left {
   } 
   .btnBuyCoffee:hover { background: rgba(255,255,255,.2); }
   .btnBuyCoffee:active { background: white; }
-  @media (max-width: 470px) {
+  .like-heart:hover {
+    cursor: pointer;
+  }
+  .containerCoffeeModal {
+    clear:both;
+    text-align:right;
+    width: 70%;
+  }
+  @media (max-width: 475px) {
     .btnBuyCoffee {
         margin: 0px;
+    }
+    .containerCoffeeModal {
+        width: 80%;
+        padding-right: 20px;
     }
   }
   @media (max-width: 460px) {
@@ -2578,12 +2595,13 @@ img.left {
         font-size: 12px;
     }
     .containerCoffeeModal {
-        width: 270px;
+        width: 100%;
+        padding-right: 30px;
     }
   }
-  @media (max-width: 322px) {
+  @media (max-width: 350px) {
     .containerCoffeeModal {
-        width: 100%;
+        padding-right: 0px;
     }
   }
 /*кнопка модального окна*/
