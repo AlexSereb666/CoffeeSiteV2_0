@@ -358,7 +358,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     function checkNumber(input) { 
         var value = input.value; 
-        var rep = /[-\.;":'a-zA-Zа-яА-Я]/; 
+        var rep = /[\.;":'a-zA-Zа-яА-Я]/; 
         if (rep.test(value)) { 
             value = value.replace(rep, ''); 
             input.value = value; 
@@ -542,8 +542,7 @@ window.addEventListener("scroll", (e) => {
     // меню навигации //
     if (window.scrollY >= 100) {
         navMenu.style.backgroundColor = "rgba(48, 40, 39, 0.6)";
-    }
-    else {
+    } else {
         navMenu.style.backgroundColor = "rgba(48, 40, 39, 0)";
     }
 });
@@ -606,16 +605,16 @@ document.addEventListener('DOMContentLoaded', () => {
         if (num == 4) {
             num = 0;
         }
-    }, 5000);
+    }, 5000);  
+});
 
-    // гамбургер меню //
-    let gamburgerMenuBtn = document.getElementById("menu__toggle");
-    gamburgerMenuBtn.addEventListener('click', (e) => {
-        let menuBox = document.querySelector('.menu__box');
-        if (gamburgerMenuBtn.checked) {
-            menuBox.style.left = "0%";
-        } else {    
-            menuBox.style.left = "-100%";
-        }
-    });
+// гамбургер меню //
+let gamburgerMenuBtn = document.getElementById("menu__toggle");
+gamburgerMenuBtn.addEventListener('click', (e) => {
+    let menuBox = document.querySelector('.menu__box');
+    if (gamburgerMenuBtn.checked) {
+        menuBox.style.left = "0%";
+    } else {    
+        menuBox.style.left = "-100%";
+    }
 });
