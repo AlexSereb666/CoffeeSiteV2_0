@@ -2546,7 +2546,7 @@ img.left {
 /*содержимое модального окна*/
 /*кнопка модального окна*/
   .btnBuyCoffee {
-    color: white;
+    color: rgb(116, 24, 192);
     font-weight: 700;
     text-decoration: none;
     user-select: none;
@@ -2603,5 +2603,8 @@ img.left {
     .containerCoffeeModal {
         padding-right: 0px;
     }
+  }
+  .error {
+    border: 2px solid red;
   }
 /*кнопка модального окна*/

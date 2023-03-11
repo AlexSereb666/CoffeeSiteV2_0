@@ -336,17 +336,17 @@ document.addEventListener('DOMContentLoaded', () => {
             price.innerHTML = "Пожалуйста! Нам нужен Ваш номер телефона!";
             goBuy = false;
         }
-        if (!ValidPhone(phone.value)) {
+        /*if (!ValidPhone(phone.value)) {
             price.innerHTML = "Некорректный номер телефона!";
             goBuy = false;
-        }
+        }*/
         if (goBuy) {
             let trueOrder = JSON.stringify(order);
             console.log("Заказ успешно оформлен!");
             console.log(trueOrder);
         }
     });
-
+    
     // проверки по регулярному выражению //
     function ValidPhone(myPhone) {
         let re = /(\+7|8)[- _]*\(?[- _]*(\d{3}[- _]*\)?([- _]*\d){7}|\d\d[- _]*\d\d[- _]*\)?([- _]*\d){6})/g;
